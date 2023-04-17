@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YP e-super Market Website</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/grocery.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/category/meat/fish.png" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Fish
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">1 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+  {{>header}}
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container">
+
+          <div class="slider-item">
+
+            {{!-- <img src="./assets/images/banner-bg-1.jpg" alt="women's latest fashion sale" class="banner-img"> --}}
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending item</p>
+
+              <p class="banner-title">Fresh And Organic Products</p>
+
+              <p class="banner-text">
+                starting at &#8377; <b>20</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending accessories</p>
+
+              <h2 class="banner-title">Modern sunglasses</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>15</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sale Offer</p>
+
+              <h2 class="banner-title">New fashion summer sale</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>29</b>.99
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+      
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/freshvegetables.png" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box" >
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Fresh Vegetables</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/freshfruits.png" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Fresh Fruits</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/milk.png" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">MILK</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+         
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/meat.png" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">MEAT</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+                   
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icecream.jpg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">ICE CREAMS</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+         
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/juice.jpeg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">JUICE</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+
+         
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/snack.jpg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">SNACK</h3>
+              </div>
+
+              <a class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>
+         
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/masala.webp" alt="Daily Kitchen Essentials" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Daily Kitchen Essentials</h3>
+              </div>
+
+              <a  href="/dailyessentials" class="category-btn">Shop Now</a>
+
+            </div>
+
+          </div>      
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/vegetable/carrots.png" alt="sidebar" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Vegetable</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Tomato</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Potato</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Onion</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Carrot</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/fruit/apple-1.png" alt="apple" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Fruits</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Orange</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Grapes</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Banana</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/daily/milk.png" alt="sidebar" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Milk</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Country Cow Milk</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Curd</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Cow Milk</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/meat/chicken-2.png" alt="chicken"  class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Meat</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Goat Meat</p>
+                      <data value="12" class="stock" title="Available Stock">480/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Chicken</p>
+                      <data value="60" class="stock" title="Available Stock">100/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Country Chicken</p>
+                      <data value="50" class="stock" title="Available Stock">150/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Egg</p>
+                      <data value="87" class="stock" title="Available Stock">5/each</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/ice/ice-cream.png" alt="ice-cream" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Ice Cream</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Vannila icecream</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Strawberry icecream</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Chocolate icecream</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Mango icecream</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/juice/orange-juice-1.png" alt="juice" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Juice</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Orange</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Lemon</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/snack/french-fries.png" alt="french-fries" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Snacks</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Murukku</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Sev</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Samosa</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Thattais</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+            <div class="product-showcase-container">
+              <h3 class="showcase-heading">best sellers</h3>
+
+              <div class="showcase-wrapper">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/product-1.png" alt="orange" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Orange</h4>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>&#8377;5.00</del>
+                        <p class="price"><span></span> &#x20B9; 4.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/product-5.png" alt="potato" class="showcase-img"
+                        width="75" height="75">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Potato</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>Rs. 17.00</del>
+                        <p class="price">Rs. 7.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/product-6.png" alt="avacado" class="showcase-img" width="75"
+                        height="75">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Avacado</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>Rs. 5.00</del>
+                        <p class="price">Rs. 3.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/cart-img-1.png" alt="watermelon" class="showcase-img" width="75"
+                        height="75">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">WaterMelon</h4>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>Rs. 15.00</del>
+                        <p class="price">Rs. 12.00</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/ice/vannila-ice.png" alt="relaxed short full sleeve t-shirt"
+                        width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/icecream">
+                        <h4 class="showcase-title">Vannila Ice creams</h4>
+                      </a>
+
+                      <a href="/icecream" class="showcase-category">Ice cream</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 45.00</p>
+                        <del>Rs. 12.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/juice/orange-juice-1.png" alt="girls pink embro design top"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/juice">
+                        <h4 class="showcase-title">Orange Juice</h4>
+                      </a>
+
+                      <a href="/juice" class="showcase-category">Juice</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 61.00</p>
+                        <del>Rs. 9.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/meat/chicken-1.png" alt="black floral wrap midi skirt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/meat">
+                        <h4 class="showcase-title">BBQ Chicken Meat</h4>
+                      </a>
+
+                      <a href="/meat" class="showcase-category">Meat</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 76.00</p>
+                        <del>Rs. 25.00</del>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/grappejuice.png" alt="black floral wrap midi skirt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/meat">
+                        <h4 class="showcase-title">Grape Juice</h4>
+                      </a>
+
+                      <a href="/meat" class="showcase-category">Meat</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 76.00</p>
+                        <del>Rs. 25.00</del>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/popcorn.png" alt="pure garment dyed cotton shirt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/snack">
+                        <h4 class="showcase-title">Butter Popcorn</h4>
+                      </a>
+
+                      <a href="/snack" class="showcase-category">Snack</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 68.00</p>
+                        <del>Rs. 31.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Trending</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/fruit/orange.png" alt="running & trekking shoes - white"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Orange</h4>
+                      </a>
+
+                      <a href="/vegetables" class="showcase-category">Vegetables</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 49.00</p>
+                        <del>Rs. 15.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/vegetable/potato.png" alt="trekking & running shoes - black"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/vegetables">
+                        <h4 class="showcase-title">Potato</h4>
+                      </a>
+
+                      <a href="/vegetables" class="showcase-category">Vegetables</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 78.00</p>
+                        <del>Rs. 36.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/vegetable/pumpkin.png" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/juice">
+                        <h4 class="showcase-title">WaterMelon Juice</h4>
+                      </a>
+
+                      <a href="/juice" class="showcase-category">Juice</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 94.00</p>
+                        <del>Rs. 42.00</del>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/vegetable/carrot.png" alt="sports claw women's shoes"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/vegetables">
+                        <h4 class="showcase-title">Carrot</h4>
+                      </a>
+
+                      <a href="/vegetables" class="showcase-category">Vegetables</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 54.00</p>
+                        <del>Rs. 65.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/juice/orange-juice-1.png" alt="orange"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/juice">
+                        <h4 class="showcase-title">Orange</h4>
+                      </a>
+
+                      <a href="/juice" class="showcase-category">Juice</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 54.00</p>
+                        <del>Rs. 65.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Top Rated</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/ice-cream-2.png" alt="silver deer heart necklace"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/icecream">
+                        <h4 class="showcase-title">Flavored ice cream</h4>
+                      </a>
+
+                      <a href="/icecream" class="showcase-category">Icecream</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 84.00</p>
+                        <del>Rs. 30.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/juice/apple.png" alt="titan 100 ml womens perfume"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/juice">
+                        <h4 class="showcase-title">Apple Juice</h4>
+                      </a>
+
+                      <a href="/juice" class="showcase-category">Juice</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 42.00</p>
+                        <del>Rs. 10.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/meat/chicken-2.png" alt="men's leather reversible belt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/meat">
+                        <h4 class="showcase-title">Chicken</h4>
+                      </a>
+
+                      <a href="/meat" class="showcase-category">Meat</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 24.00</p>
+                        <del>Rs. 10.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/kebab.png" alt="platinum zircon classic ring"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/snack">
+                        <h4 class="showcase-title">kebab</h4>
+                      </a>
+
+                      <a href="/snack" class="showcase-category">Snack</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 62.00</p>
+                        <del>Rs. 65.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="" class="showcase-img-box">
+                      <img src="./assets/images/category/tomato.png" alt="pocket watch leather pouch"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="/vegetables">
+                        <h4 class="showcase-title">Tomato</h4>
+                      </a>
+
+                      <a href="/vegetables" class="showcase-category">Vegetables</a>
+
+                      <div class="price-box">
+                        <p class="price">Rs. 50.00</p>
+                        <del>Rs. 34.00</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/category/vegetable/carrot.png" alt="carrot" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="/vegetables">
+                      <h3 class="showcase-title">Ooty Fresh Carrot</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Rs. 150.00</p>
+                      <del>Rs. 200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn"><a href="/vegetables">BUY</a></button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/category/vegetable/pumpkin.png" alt="Juice" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="/juice">
+                      <h3 class="showcase-title">Pumpkin</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Rs. 150.00</p>
+
+                      <del>Rs. 200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn"><a href="/vegetables">BUY</a></button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/category/meat/chicken-2.png" alt="Country Chicken" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="/meat" class="showcase-title">Contry Chicken</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Rs. 1990.00</p>
+                      <del>Rs. 2000.00</del>
+                    </div>
+
+                    <button class="add-cart-btn"><a href="/meat">BUY</a> </button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+
+                        <p> available: <b>40</b> </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/category/juice/honeydew.png" alt="Mens Winter Leathers Jackets" width="300"
+                    height="100" class="product-img default">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="/juice" class="showcase-category">Soft Drinks</a>
+
+                  <a href="/juice">
+                    <h3 class="showcase-title">Juice</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 48.00</p>
+                    <del>Rs. 75.00</del>
+                  </div>
+
+                </div>
+
+                <a href="/juice"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/fruit/watermelon.png" alt="Pure Garment Dyed Cotton Shirt"
+                    class="product-img default" width="300" height="100">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/fruit" class="showcase-category">WaterMelon</a>
+
+                  <h3>
+                    <a href="/fruit" class="showcase-title">Fruits</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 45.00</p>
+                    <del>Rs. 56.00</del>
+                  </div>
+                </div>
+                <a href="/fruit"><button class="buy-btn">Buy</button></a>
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/daily/milk.png" alt="MEN Yarn Fleece Full-Zip Jacket"
+                    class="product-img default" width="300" height="100">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/milk" class="showcase-category">Cow Milk</a>
+
+                  <h3>
+                    <a href="/milk" class="showcase-title">Milk</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 58.00</p>
+                    <del>Rs. 65.00</del>
+                  </div>
+
+                </div>
+                <a href="/milk"><button class="buy-btn">Buy</button></a>
+
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/vegetable/pumpkin.png" alt="Black Floral Wrap Midi Skirt"
+                    class="product-img default" width="300" height="100">
+
+                  <p class="showcase-badge angle pink">new</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/fruit" class="showcase-category">Bumpkin</a>
+
+                  <h3>
+                    <a href="/fruit" class="showcase-title">Fruit</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 25.00</p>
+                    <del>Rs. 35.00</del>
+                  </div>
+
+                </div>
+                <a href="/fruit"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/fruit/pineapple.png" alt="Casual Men's Brown shoes"
+                    class="product-img default" width="300" height="100">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/fruit" class="showcase-category">Pineapple</a>
+
+                  <h3>
+                    <a href="/fruit" class="showcase-title">Fruit</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 99.00</p>
+                    <del>Rs. 105.00</del>
+                  </div>
+
+                </div>
+                <a href="/fruit"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/fruit/strawberry.png" alt="Pocket Watch Leather Pouch"
+                    class="product-img default" width="300" height="100">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/fruit" class="showcase-category">Strawberry</a>
+
+                  <h3>
+                    <a href="/fruit" class="showcase-title">Fruit</a>
+                  </h3>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 60.00</p>
+                    <del>Rs. 90.00</del>
+                  </div>
+
+                </div>
+                <a href="/fruit"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/vegetable/cabbage.png" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300" height="100">
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/vegetable" class="showcase-category">Califlower</a>
+
+                  <h3>
+                    <a href="/vegetable" class="showcase-title">Vegetable</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 90.00</p>
+                    <del>Rs. 95.00</del>
+                  </div>
+
+                </div>
+                <a href="/vegetables"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/meat/fish.png" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300" height="100">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/meat" class="showcase-category">Fish</a>
+
+                  <h3>
+                    <a href="/meat" class="showcase-title">Meat</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 25.00</p>
+                    <del>Rs. 30.00</del>
+                  </div>
+
+                </div>
+                <a href="/meat"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/vegetable/dry-coconut.png" alt="Mens Winter Leathers Jackets"
+                    class="product-img default" width="300" height="100">
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/vegetable" class="showcase-category">Coconut</a>
+
+                  <h3>
+                    <a href="/vegetable" class="showcase-title">Vegetable</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 32.00</p>
+                    <del>Rs. 45.00</del>
+                  </div>
+
+                </div>
+                <a href="/vegetables"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/chicken-rooster.png" alt="Trekking & Running Shoes - black"
+                    class="product-img default" width="300" height="100">
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/meat" class="showcase-category">Chicken</a>
+
+                  <h3>
+                    <a href="/meat" class="showcase-title">Meat</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 58.00</p>
+                    <del>Rs. 64.00</del>
+                  </div>
+
+                </div>
+                <a href="/meat"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/vegetable/beetroot.png" alt="Men's Leather Formal Wear shoes"
+                    class="product-img default" width="300" height="100">
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/vegetable" class="showcase-category">Beetrrot</a>
+
+                  <h3>
+                    <a href="/vegetable" class="showcase-title">Vegetable</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 50.00</p>
+                    <del>Rs. 65.00</del>
+                  </div>
+
+                </div>
+                <a href="/vegetables"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/category/goat.png" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300" height="100">
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="/meat" class="showcase-category">Goat Meat</a>
+
+                  <h3>
+                    <a href="/meat" class="showcase-title">Meat</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rs. 78.00</p>
+                    <del>Rs. 85.00</del>
+                  </div>
+
+                </div>
+                <a href="/meat"><button class="buy-btn">Buy</button></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/category/me.jfif" alt="alan doe" class="testimonial-banner" width="80"
+                height="80">
+
+              <p class="testimonial-name">YOgeshwaran</p>
+
+              <p class="testimonial-title">CEO & Founder YOY</p>
+
+              <img src="./assets/images/category/cow.png" alt="quotation" class="quotation-img" width="63">
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/category/grocery.png" alt="summer collection" class="cta-banner">
+          </div>
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="bicycle-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Free Door Delivery</h3>
+                  <p class="service-desc">For Order Over Rs. 1000</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">Coimbatore Orders Only</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over Rs. 100</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="scan-circle-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Scan and Pay</h3>
+                  <p class="service-desc">UPI Transactions</p>
+
+                </div>
+
+              </a>
+
+              <a href="/" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Easy Swipe</h3>
+                  <p class="service-desc">DebitCard Transactions</p>
+
+                </div>
+
+              </a>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="/">
+              <img src="./assets/images/blog/blog-4.webp" alt=""
+                width="300" height="200" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="/fruit" class="blog-category">Fruits</a>
+
+              <a href="/fruit">
+                <h3 class="blog-title">Oraganic And Fresh.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="/">
+              <img src="./assets/images/blog/blog-2.jpg" alt=""
+                class="blog-banner" width="300" height="200">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="/fruit" class="blog-category">Fruits</a>
+
+              <h3>
+                <a href="/fruit" class="blog-title">Fresh And OnTime Delivery.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="/">
+              <img src="./assets/images/blog/blog-3.png" alt=""
+                class="blog-banner" height="200" width="300" height="100">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="/dailyessentials" class="blog-category">Daily Essentials</a>
+
+              <h3>
+                <a href="/dailyessentials" class="blog-title">Cash On Delivery Option are available.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="/">
+              <img src="./assets/images/blog/blog-5.jpg" alt=""
+                class="blog-banner" width="300" height="200">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="/meat" class="blog-category">Meat</a>
+
+              <h3>
+                <a href="/meat" class="blog-title">Meats are hygenic.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Yogeshwaran</cite> / <time datetime="03-03-2023">Mar 03, 2023</time>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  {{>footer}}

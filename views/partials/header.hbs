@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YP e-super Market Website</title>
+
+  <!-- BOOTSTRP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/grocery.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="javascript" href="./assets/js/script.js">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="overlay" data-overlay></div>
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            Free Shipping
+            This Week Order Over - Rs. 1499.
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="/" class="header-logo">
+          <img src="./assets/images/logo/logo.png" alt="Anon's logo" width="60" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <a href="/login"><ion-icon name="person-outline"></ion-icon></a>
+          </button>
+
+          <button class="action-btn">
+             <a href="/profile"><ion-icon name="people-outline"></ion-icon></a>
+          </button>
+        
+          <button class="action-btn">
+             <a href="/profile"><ion-icon name="bag-handle-outline"></ion-icon></a>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Home</a>
+          </li>
+          <li class="menu-category">
+            <a href="/" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="/">Categories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/vegetables">Vegetables</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/fruit">Fruits</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/juice">Juice</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/snack">Snack</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/icecream">Icecream</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="/dailyessentials">Daily Essentials</a>
+                </li>
+
+              </ul>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Vegetables</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="/vegetables">Beetroot</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/vegetables">Potato</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/vegetables">Tomato</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/vegetables">Carrot</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/vegetables">Califlower</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Fruits</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="/fruit">Apple</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/fruit">Orange</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/fruit">Grapes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/fruit">Avacado</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/fruit">WaterMelon</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Juice</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="/juice">Apple Juice</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/juice">Orange Juice</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/juice">Grape Juice</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/juice">WaterMelon Juice</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Icecream</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="/icecream">Vannila Icecream</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/icecream">Chocolate Icecream</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/icecream">Flowered Icecream</a>
+              </li>
+
+
+              <li class="dropdown-item">
+                <a href="/icecream">Strawberry Icecream</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Snacks</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="/snack">Murukku</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/snack">Samosa</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/snack">Sev</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/snack">Thattis</a>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li class="menu-category">
+            <a href="/blog" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="/" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Categories</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="/vegetables" class="submenu-title">Vegetable</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="/fruit" class="submenu-title">Fruits</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="/juice" class="submenu-title">Juice</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="/snack" class="submenu-title">Snack</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="/icecream" class="submenu-title">Icecream</a>
+            </li>
+            <li class="submenu-category">
+              <a href="/dailyessentials" class="submenu-title">Daily Essentials</a>
+            </li>
+
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Vegetables</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Beetroot</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Potato</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tomato</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Carrot</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Califlower</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Fruits</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Apple</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Orange</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Grapes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Avacado</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">WaterMelon</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Juice</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Apple Juice</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Orange Juice</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Grape Juice</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">WaterMelon Juice</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+<div class="form-popup" id="myForm">
+ <form action="" class="form-container">
+    <ion-icon name="close-outline" onclick="closeForm()"  class="btn cancel"></ion-icon> 
+    <div>
+       <h1 >Thanks for purchasing in YP e-super Market</h1>
+       <p>Your Free Cash Coupon Code :&nbsp;&nbsp;<strong style="background-color: rgba(94, 93, 91, 0.788);padding: 5px 3px;">GSGK6422</strong></p>
+    </div>
+    
+  </form>
+</div>
+
+  </header>
+
+ 

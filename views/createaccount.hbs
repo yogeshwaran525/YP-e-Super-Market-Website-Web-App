@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-super Market Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/grocery.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+{{> header}}
+{{!-- Create Account --}}
+    <div class="container-account">
+      {{!-- database connected to user.js --}}
+      {{#if msg}}
+      <p class="{{msg_type}}">{{msg}}</p>
+      {{/if}}
+      {{!-- database connected to user.js --}}
+      <form action="/auth/register" method="post">
+      <div class="text">Registration</div>
+        <div class="data">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="full name"/>
+        </div>
+        <div class="data">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email"/>
+        </div>
+        <div class="data">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="password"/>
+        </div>
+        <div class="data">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" name="confirm_password" id="password" placeholder="confirm password"/>
+        </div>
+
+        {{!-- <div class="btn"> --}}
+          <button type="submit" class="btn btn-primary btn-register">Register</button>
+        {{!-- </div> --}}
+        {{!-- <div class="signup-link"> --}}
+         <p class="signup-link">Already a member ?</p>  <a href="/login" class="btn btn-danger btn-login">Login now</a>
+        {{!-- </div> --}}
+      </form>
+    </div>
+{{> footer}}

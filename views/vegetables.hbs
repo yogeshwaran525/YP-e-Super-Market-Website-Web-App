@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-super Market Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/grocery.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/category/meat/fish.png" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Fish
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">1 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+  {{>header}}
+  <div class="product-container">
+
+    <div class="container">
+
+
+      <!--
+          - SIDEBAR
+        -->
+
+      <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+        <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/vegetable/carrots.png" alt="sidebar" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Vegetable</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Tomato</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Potato</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Onion</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/vegetable" class="sidebar-submenu-title">
+                      <p class="product-name">Carrot</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/fruit/apple-1.png" alt="apple" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Fruits</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Orange</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Grapes</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/fruit" class="sidebar-submenu-title">
+                      <p class="product-name">Banana</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/daily/milk.png" alt="sidebar" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Milk</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Country Cow Milk</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Curd</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/milk" class="sidebar-submenu-title">
+                      <p class="product-name">Cow Milk</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/meat/chicken-2.png" alt="chicken"  class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Meat</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Goat Meat</p>
+                      <data value="12" class="stock" title="Available Stock">480/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Chicken</p>
+                      <data value="60" class="stock" title="Available Stock">100/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Country Chicken</p>
+                      <data value="50" class="stock" title="Available Stock">150/kg</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/meat" class="sidebar-submenu-title">
+                      <p class="product-name">Egg</p>
+                      <data value="87" class="stock" title="Available Stock">5/each</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/ice/ice-cream.png" alt="ice-cream" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Ice Cream</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Vannila icecream</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Strawberry icecream</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Chocolate icecream</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/icecream" class="sidebar-submenu-title">
+                      <p class="product-name">Mango icecream</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/juice/orange-juice-1.png" alt="juice" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Juice</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Orange</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/juice" class="sidebar-submenu-title">
+                      <p class="product-name">Lemon</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/category/snack/french-fries.png" alt="french-fries" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Snacks</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Murukku</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Sev</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Samosa</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="/snack" class="sidebar-submenu-title">
+                      <p class="product-name">Thattais</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+        </div>
+
+        <div class="product-showcase">
+          <div class="product-showcase-container">
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="/vegetable" class="showcase-img-box">
+                    <img src="./assets/images/product-1.png" alt="" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="/vegetable">
+                      <h4 class="showcase-title">Orange</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>&#8377;5.00</del>
+                      <p class="price"><span></span> &#x20B9; 4.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="/vegetable" class="showcase-img-box">
+                    <img src="./assets/images/product-5.png" alt="potato" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="/vegetable">
+                      <h4 class="showcase-title">Potato</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rs. 17.00</del>
+                      <p class="price">Rs. 7.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="/vegetable" class="showcase-img-box">
+                    <img src="./assets/images/product-6.png" alt="avacado" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="/vegetable">
+                      <h4 class="showcase-title">Avacado</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rs. 5.00</del>
+                      <p class="price">Rs. 3.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="/vegetable" class="showcase-img-box">
+                    <img src="./assets/images/cart-img-1.png" alt="watermelon" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="/vegetable">
+                      <h4 class="showcase-title">WaterMelon</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rs. 15.00</del>
+                      <p class="price">Rs. 12.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="product-main-padding">
+        <div class="product-main">
+
+          <div class="product-grid">
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="./assets/images/category/vegetable/beens.png" alt="beens" width="300"
+                  height="100" class="product-img default">
+
+                <p class="showcase-badge">15%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a  class="showcase-category">Beens</a>
+
+                <a >
+                  <h3 class="showcase-title">Vegetable</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 30.00</p>
+                  <del>Rs. 50.00</del>
+                </div>
+
+              </div>
+
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/brocoli.png" alt="brocoli"
+                  class="product-img default" width="300" height="100">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Brocoli</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 45.00</p>
+                  <del>Rs. 56.00</del>
+                </div>
+              </div>
+              <button class="buy-btn">Buy</button>
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/carrot.png" alt="carrot"
+                  class="product-img default" width="300" height="100">
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Carrot</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 50.00</p>
+                  <del>Rs. 60.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/cauli-flower.png" alt="cauli-flower"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Cauli Flower</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 25.00</p>
+                  <del>Rs. 30.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/vendaikai.png" alt="vendaikai"
+                  class="product-img default" width="300" height="100">
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Vendaikai</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 40.00</p>
+                  <del>Rs. 50.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/beetroot.png" alt="beetroot"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">sale</p>
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Beetroot</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 20.00</p>
+                  <del>Rs. 40.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/cabbage.png" alt="cabbage"
+                  class="product-img default" width="300" height="100">
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Cabbage</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 40.00</p>
+                  <del>Rs. 45.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/potato.png" alt="potato" class="product-img default"
+                  width="300" height="100">
+                <p class="showcase-badge angle black">sale</p>
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Potato</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 25.00</p>
+                  <del>Rs. 30.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/dry-coconut.png" alt="Mens Winter Leathers Jackets"
+                  class="product-img default" width="300" height="100">
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Coconut</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 32.00</p>
+                  <del>Rs. 45.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/tomato.png" alt="tomato"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">sale</p>
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Tomato</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 45.00</p>
+                  <del>Rs. 30.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/beetroot.png" alt="Men's Leather Formal Wear shoes"
+                  class="product-img default" width="300" height="100">
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Beetrrot</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 50.00</p>
+                  <del>Rs. 65.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/pumpkin.png" alt="pumpkin"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Pumpkin</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 30.00</p>
+                  <del>Rs. 25.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/puli.png" alt="puli"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">Top sale</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Puli</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 40.00</p>
+                  <del>Rs. 25.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/inji.png" alt="inji"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">New</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Inji</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 20.00</p>
+                  <del>Rs. 25.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/mushroom.png" alt="mushroom"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">New</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Mushroom</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 60.00</p>
+                  <del>Rs. 70.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+                <img src="./assets/images/category/vegetable/onion.png" alt="onion"
+                  class="product-img default" width="300" height="100">
+                <p class="showcase-badge angle black">New</p>
+
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="/vegetable" class="showcase-category">Onion</a>
+
+                <h3>
+                  <a href="/vegetable" class="showcase-title">Vegetable</a>
+                </h3>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">Rs. 30.00</p>
+                  <del>Rs. 35.00</del>
+                </div>
+
+              </div>
+              <button class="buy-btn">Buy</button>
+
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+  <section class="container content-section">    
+    <h1 style="text-align: center;">CART ITEM</h1>
+    <form class="cart-form" method="POST" action="/purchasing"  name="f1" novalidate>
+      <div class="cart-items">   
+          <button type="submit" class="btn btn-primary btn-purchase"  onclick="openForm()">PURCHASE</button>           
+      </div>
+       
+    </form>
+
+
+   <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price" id="ctotal"> Rs. 0</span>
+      </div>
+
+  </section>
+
+  {{>footer}}
