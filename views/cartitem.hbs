@@ -28,22 +28,28 @@
 
 <body>
 {{>header}}
+        
+<h1 style="text-align: center;">All Cart Item</h1>
+<table class="table table-bordered  table-success table-striped border border-info table-striped-columns text-center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>  
+  <tbody>   
+    {{#each results}}
+    <tr>
+      <td scope="row"></td>
+      <td>"{{this.title}}"</td>
+      <td>{{this.category}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.quantity}}</td>
+    </tr>  
+      {{/each}}
  
-  <form action="/auth/login" class="login-form" method="post">
-        <h3>Login Now</h3>
-
-        {{#if msg}}
-        <p class="{{msg_type}}" id="good">{{msg}}</p>
-        {{/if}}
-       
-        <input type="email" placeholder="Enter Your Emaild" class="box" name="email">
-        <input type="password" placeholder="Enter Your Password" class="box" name="password">
-    {{!-- <p>Forget Your Password<a href="/forgotpwd">Clickhere</a></p> --}}
-    <p>Don't have an account</p>
-    <div class="login-btn">
-         <button  class="btn btn-primary btn-form"><a href="/createaccount" >Createnow</a></button>
-         <input type="submit" value="Login" class="btn btn-primary btn-form">        
-    </div>
-       
-    </form>
+  </tbody>
+</table>
 {{>footer}}

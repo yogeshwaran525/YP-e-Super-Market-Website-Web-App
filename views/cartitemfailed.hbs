@@ -29,21 +29,9 @@
 <body>
 {{>header}}
  
-  <form action="/auth/login" class="login-form" method="post">
-        <h3>Login Now</h3>
-
-        {{#if msg}}
-        <p class="{{msg_type}}" id="good">{{msg}}</p>
-        {{/if}}
-       
-        <input type="email" placeholder="Enter Your Emaild" class="box" name="email">
-        <input type="password" placeholder="Enter Your Password" class="box" name="password">
-    {{!-- <p>Forget Your Password<a href="/forgotpwd">Clickhere</a></p> --}}
-    <p>Don't have an account</p>
-    <div class="login-btn">
-         <button  class="btn btn-primary btn-form"><a href="/createaccount" >Createnow</a></button>
-         <input type="submit" value="Login" class="btn btn-primary btn-form">        
-    </div>
-       
-    </form>
+  <div class="login-form" style="max-width: 700px;">
+        <h3>Failed in updating of fields in Database.</h3> 
+        <h3 style="text-align: center;">Try Again.</h3> 
+        <button class="btn btn-primary"><a href="/">Home</a> </button>     
+   </div>
 {{>footer}}

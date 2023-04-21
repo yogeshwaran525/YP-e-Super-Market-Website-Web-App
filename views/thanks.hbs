@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-super Market Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/grocery.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
-<body class="has-scrollbar" style="background-color: rgb(164, 249, 249);color: black;font-size: 1rem;padding: 5px;">
-    <div class="has-scrollbar" style="background-color: antiquewhite;min-width: 200px;min-height: 500px;padding: 5px;">   
-        <h1 >Thanks for purchasing in YP e-super Market</h1>
-        <h1>Collect the <strong>Discount Coupons</strong> in Our store Located in Punjai Puliampatti.</h1>
-        <h1>Eat Food and take healthy life</h1>
-        <img src="./assets/images/logo/favicongif.gif" width="350px"  height="350px" alt="gif">
+<body>
+    <div class="overlay" data-overlay></div>
+    <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+
     </div>
-</body>
-</html>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/category/meat/fish.png" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Fish
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">1 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+{{>header}}
+
+    <div class="container-thanks has-scrollbar" >   
+        <h3 >Thanks for purchasing in YP e-super Market
+        Collect the <strong>Discount Coupons</strong> in Our store Located in</h3>
+        <h3 style="text-align: center;display: block;font-size: 2rem;">Punjai Puliampatti.</h3>
+        <h1 style="text-align: center;">Eat Food and take healthy life.</h1>
+        <h1 class="profile">{{data.name}}</h1>
+        <h1 class="profile">{{data.email}}</h1>
+        <img src="./assets/images/logo/favicongif.gif" class="img"  alt="gif">
+    </div>
+{{>footer}}
